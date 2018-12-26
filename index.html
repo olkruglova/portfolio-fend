@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio O.K.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="images/krol_logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="row row-header">
+                <img id="logo" class="image-responsive" src="images/krol_logo.png" alt="Logo Krol">
+                <div class="vertical-line"></div>
+                <div id="site-name">
+                    <h3 class="name">Olha Kruhlova</h3>
+                    <h6 class="sub-name">Portfolio</h6>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#social">Social</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-me">Contact Me</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr class="hr-top">
+        <hr class="hr-top">
+        
+        <article id="about-me">
+            <div class="background">
+                <img id="backgraund-image"  src="images/stars.jpg" alt="Night sky">
+                <p class="top-text">A year ago, I started to learn<br> HTML, CSS, JS. <br>Since then my life has changed radically...</p>
+            </div>
+        </article>
+
+        <div id="projects">
+            <p class="middle-header">Projects</p>
+        </div>
+
+        <article id="projects-item">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <figure>
+                        <div class="image-room">
+                            <a href=" https://olkruglova.github.io/canvas-pixel-art/" target="_blank"><img class="thumbnails img-responsive" src="images/pxl.jpg" alt="Pixels"></a>
+                        </div>
+                        <figcaption>Pixel Art Maker</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <figure>
+                        <div class="image-room">
+                            <a href=" https://mandarin-poznan.com" target="_blank"><img class="thumbnails img-responsive" src="images/mandarine-villa.png" alt="Mandarine Villa"></a>
+                        </div>
+                        <figcaption>Mandarine Villa (hotel)</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <figure>
+                        <div class="image-room">
+                            <a href="https://olkruglova.github.io/arcade-game-FEND/" target="_blank"><img class="thumbnails img-responsive" src="images/arcade-game.png" alt="Arcade game"></a>
+                        </div>
+                        <figcaption>Arkade Game (based on the Frogger)</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <figure>
+                        <div class="image-room">
+                            <a href="https://olkruglova.github.io/my-memory-game-2/" target="_blank"><img class="thumbnails img-responsive" src="images/memory-game.png" alt="Memory game"></a>
+                        </div>
+                        <figcaption>Memory Game</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </article>
+        <hr class="hr-bottom">
+        <hr class="hr-bottom">
+        <footer>
+            <div class="row row-footer text-center">
+                <h5 class="footer-name">Portfolio O.K.</h5>
+                <div id="social" class="icons">
+                    <a href="https://github.com/olkruglova" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/olga-kruglova-502b06154/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    <a href="https://www.facebook.com/olga.kruglova.9849" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                </div>
+
+                <form id="contact-me" action="mailto:olkruhlova@gmail.com" method="post" enctype="text/plain" class="form-horizontal">
+                    <h5 class="contact-header"><i class="fa fa-envelope"></i>Contact Me</h5>
+                    <div class="card border-primary rounded-0">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                            <textarea class="form-control" rows="3" name="message" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                            <button type="submit" class="btn btn-block">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="bottom">
+                <p>Copyright © 2018 | Coded By <a href="https://www.linkedin.com/in/olga-kruglova-502b06154/" target="_blank">Krol</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
