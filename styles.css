@@ -16,11 +16,11 @@ body {
 header {
     width: 100%;
     background-image: url(images/header.png);
-    padding: 10px 0;
+    padding: 12px 45px;
     height: 202px;
 }
 .row-header {
-    width: 90%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -54,7 +54,7 @@ nav {
 }
 .nav-item{
     display: inline-block;
-    margin-left: 17px;
+    margin-left: 29px;
 }
 .nav-link {
     text-transform: uppercase;
@@ -64,8 +64,56 @@ nav {
 .nav-link:hover {
     color: #24245b;
 }
-
+#hamburger-menu {
+    display: none;
+    float: right;
+    margin-top: 2.1em;
+}
+.fa-bars {
+    color: #24245b;
+}
+.fa-bars:hover {
+    color: #5d5d86;
+    cursor: pointer;
+}
+#menu-bar {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    width: 400px;
+    position: absolute;
+    top: 130px;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-445px, 0);
+    transform: translate(-445px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+}
+#menu-bar.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    float:left;
+}
+.bar-item {
+    color: #24245b;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 1.8em;
+    padding: 20px 40px;
+    margin: 20px 0;
+    display: inline-block;
+    width:100%;
+}
+.bar-item:hover {
+    color: #24245b;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
 /******Main content **********************/
+
+.invisible {
+    display: none;
+}
 .hiddens {
     opacity: 0;
 }
@@ -90,19 +138,33 @@ nav {
     font-size: 5em;
 }
 #projects {
-    background-image: url(images/main.png);
     width: 100%;
-    height: 1000px;
-    opacity:0;
-    margin-left:-800px; 
+    margin-left:-800px;
     max-width:100%;
 }
 #projects-title {
+    background-color: #fff;
     width: 100%;
-    height: 105px;
-    padding: 100px 0 70px 0;
-    margin-top: 37px;
-    margin-bottom: 17px;
+    padding: 20px 0 40px 0;
+    margin: -20px 0 0 0;
+}
+#main-top{
+    background-image: url(images/main-top.png);
+    width: 100%;
+    height: 127px;
+    margin: 0;
+    padding: 0;
+}
+.row {
+    margin:0;
+    padding:0;
+}
+#main-bottom {
+    background-image: url(images/main-bottom.png);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 79px;
 }
 #projects-title p{
     color: #24245b;
@@ -116,16 +178,14 @@ nav {
 }
 
 #projects-item {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 70px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
 }
-.row1{
-    width: 50%;
-    margin-right: auto;
+.row-proj{
+    width: 90%;
     margin-left: auto;
+    margin-right: auto;
 }
 .col-md-6, .col-md-12 {
     text-align: center;
@@ -181,7 +241,7 @@ a {
 
 
 #contact-me {
-    margin: 150px auto;
+    margin: 250px auto 150px auto;
     width: 60%;
 }
 form {
@@ -265,5 +325,16 @@ footer {
     .top-text {
         letter-spacing: 0.2em;
         font-size: 3.5em;
+    }
+}
+@media screen and (max-width: 968px) {
+    #contact-me{
+        width:100%;
+    }
+    nav {
+        display: none;
+    }
+    #hamburger-menu {
+        display: inline-block;
     }
 }

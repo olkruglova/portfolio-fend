@@ -30,3 +30,19 @@ $(document).ready(function() {
     });
 
 });
+
+
+/*
+  * Open the drawer when the menu ison is clicked.
+  */
+ var menu = document.querySelector('#hamburger-menu');
+ var main = document.querySelector('.container');
+ var drawer = document.querySelector('#menu-bar');
+ 
+ menu.addEventListener('click', function(e) {
+   drawer.classList.toggle('open');
+   e.stopPropagation();
+ });
+ main.addEventListener('click', function() {
+   drawer.classList.remove('open');
+ });
