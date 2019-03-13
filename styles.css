@@ -151,7 +151,6 @@ nav {
 }
 #main-top {
     background-color: snow;
-    /* background-image: url(images/main-top.png); */
     width: 100%;
     height: 127px;
     margin: 0;
@@ -193,51 +192,78 @@ nav {
     text-align: center;
     margin-bottom: 2.7em;
 }
-figure{
-    max-width: 100%;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 0 26px 2px rgba(114, 133, 165, 0.5);
-    transition: 0.5s ease;
+.icon {
+    margin: 0 10px;
 }
-figure:hover{
-    box-shadow: 0 0 8px 0.2px rgba(114, 133, 165, 0.5);
-    cursor: pointer;
+.img-project1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/pxl.jpg);
 }
-figcaption{
-    color: #7285a5;
-    text-align: center;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin-bottom: 0.5em;
-    margin-top: 1em;
+.img-project2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/mandarine-villa.png);
 }
-.image-room {
-    height: 250px;
-    border-radius: 5px 5px 0 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2.5em;
-    overflow: hidden;
+.img-project3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/memory-game.png);
 }
-.thumbnails {
-    height:100%;
-    border-radius: 5px 5px 0 0;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-    transition: width 2s, height 2s ease;
+.img-project4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/author_quiz.png);
 }
-.thumbnails:hover {
-    width: calc(width + 30px);
-    height: 330px;
+.img-project5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/arcade-game.png);
 }
-a {
-    text-decoration: none;
+.img-project6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/my-reads.png);
 }
 
+.img-project {
+    width: 80%;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.caption {
+    position: absolute;
+    bottom: -500px;
+    width: 100%;
+    text-align: center;
+    padding: 0 3%;
+    margin: auto;
+    transition: 0.4s ease;
+}
+.img-project p {
+    font-size: 2em;
+    text-align: center;
+    color: #DAF0B2;
+    display: block;
+}
+.img-project p small {
+    font-size: 0.6em;
+}
+.img-project button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0);
+    color: #DAF0B2;
+    border: 1px solid #DAF0B2;
+    border-radius: 2px;
+    font-size: 1.5em;
+}
+.img-project button:hover {
+    background-color: rgba(0,0,0,0);
+    color: #DAF0B2;
+    border: 1px solid #DAF0B2;
+    box-shadow: 0 0 7px 7px #DAF0B2;
+    border-radius: 2px;
+    font-size: 1.5em;
+}
+.btn-more a {
+    color: #DAF0B2;
+    text-decoration: none;
+}
 /******Contact Me*******************/
 
 

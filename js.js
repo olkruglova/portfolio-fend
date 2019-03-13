@@ -31,6 +31,74 @@ $(document).ready(function() {
 
 });
 
+$('.img-project1')
+    .mouseover(
+        function() {
+            $('.caption1').css('bottom', '20%');
+        }
+    )
+    .mouseout(
+        function() {
+            $('.caption1').css('bottom', '-500px');
+        }
+    )
+$('.img-project2')
+.mouseover(
+    function() {
+        $('.caption2').css('bottom', '20%');
+    }
+)
+.mouseout(
+    function() {
+        $('.caption2').css('bottom', '-500px');
+    }
+)
+$('.img-project3')
+.mouseover(
+    function() {
+        $('.caption3').css('bottom', '20%');
+    }
+)
+.mouseout(
+    function() {
+        $('.caption3').css('bottom', '-500px');
+    }
+)
+$('.img-project4')
+.mouseover(
+    function() {
+        $('.caption4').css('bottom', '20%');
+    }
+)
+.mouseout(
+    function() {
+        $('.caption4').css('bottom', '-500px');
+    }
+)
+$('.img-project5')
+.mouseover(
+    function() {
+        $('.caption5').css('bottom', '20%');
+    }
+)
+.mouseout(
+    function() {
+        $('.caption5').css('bottom', '-500px');
+    }
+)
+$('.img-project6')
+.mouseover(
+    function() {
+        $('.caption6').css('bottom', '20%');
+    }
+)
+.mouseout(
+    function() {
+        $('.caption6').css('bottom', '-500px');
+    }
+)
+
+
 
 /*
   * Open the drawer when the menu ison is clicked.
