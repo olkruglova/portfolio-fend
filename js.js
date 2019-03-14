@@ -23,7 +23,7 @@ $(document).ready(function() {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             if( bottom_of_window < bottom_of_element ){
-                $(this).animate({'opacity':'1','margin-left':'0px'},1000);
+                $(this).animate({'opacity':'1'},1000);
             }
             
         }); 
@@ -34,7 +34,7 @@ $(document).ready(function() {
 $('.img-project1')
     .mouseover(
         function() {
-            $('.caption1').css('bottom', '20%');
+            $('.caption1').css('bottom', '10%');
         }
     )
     .mouseout(
@@ -45,7 +45,7 @@ $('.img-project1')
 $('.img-project2')
 .mouseover(
     function() {
-        $('.caption2').css('bottom', '20%');
+        $('.caption2').css('bottom', '10%');
     }
 )
 .mouseout(
@@ -56,7 +56,7 @@ $('.img-project2')
 $('.img-project3')
 .mouseover(
     function() {
-        $('.caption3').css('bottom', '20%');
+        $('.caption3').css('bottom', '10%');
     }
 )
 .mouseout(
@@ -67,7 +67,7 @@ $('.img-project3')
 $('.img-project4')
 .mouseover(
     function() {
-        $('.caption4').css('bottom', '20%');
+        $('.caption4').css('bottom', '10%');
     }
 )
 .mouseout(
@@ -78,7 +78,7 @@ $('.img-project4')
 $('.img-project5')
 .mouseover(
     function() {
-        $('.caption5').css('bottom', '20%');
+        $('.caption5').css('bottom', '10%');
     }
 )
 .mouseout(
@@ -89,7 +89,7 @@ $('.img-project5')
 $('.img-project6')
 .mouseover(
     function() {
-        $('.caption6').css('bottom', '20%');
+        $('.caption6').css('bottom', '10%');
     }
 )
 .mouseout(

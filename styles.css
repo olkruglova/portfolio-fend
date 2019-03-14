@@ -1,7 +1,8 @@
 body {
-    background-image: url(images/stars.jpg);
+    background-image: linear-gradient(to right, white 0%, rgb(240, 240, 240) 30%);
     background-attachment: fixed;
     background-size: cover;
+    color: #2f420d;
 }
 .container {
     width: 100%;
@@ -16,9 +17,7 @@ body {
 header {
     width: 100%;
     background-image: linear-gradient(to right, white 0%, rgb(240, 240, 240) 30%);
-    /* background-image: url(images/header.png); */
-    padding: 12px 45px;
-    /* height: 202px; */
+    padding: 1.5% 4%;
 }
 .row-header {
     width: 100%;
@@ -30,7 +29,7 @@ header {
     display: inline-block;
 }
 .vertical-line {
-    border-left: 2px solid #24245b;
+    border-left: 2px solid #2f420d;
     height: 85px;
     vertical-align: top;
     margin: 0 10px 0 10px;
@@ -40,13 +39,9 @@ header {
     display: inline-block;
     vertical-align: bottom;
 }
-.name {
-    color: #24245b;
-}
 .sub-name {
     text-transform: uppercase;
     letter-spacing: 0.8455em;
-    color: #24245b;
 }
 nav {
     display: inline-block;
@@ -58,23 +53,30 @@ nav {
     margin-left: 33px;
 }
 .nav-link {
+    padding: 7px 12px;
+    color: #2f420d;
     text-transform: uppercase;
     letter-spacing: 0.4em;
-    color: #24245b;
+    transition: 0.2s ease-in-out;
+    background-color: transparent;
+    border-bottom: 2px solid transparetn;
 }
 .nav-link:hover {
-    color: #24245b;
+    text-decoration: none;
+    color: #2f420d;
+    border-bottom: 2px solid #2f420d;
 }
+
 #hamburger-menu {
     display: none;
     float: right;
     margin-top: 2.1em;
 }
 .fa-bars {
-    color: #24245b;
+    color: #2f420d;
 }
 .fa-bars:hover {
-    color: #5d5d86;
+    color: #DAF0B2;
     cursor: pointer;
 }
 #menu-bar {
@@ -84,8 +86,8 @@ nav {
     position: absolute;
     top: 130px;
     /* This trasform moves the drawer off canvas. */
-    -webkit-transform: translate(-445px, 0);
-    transform: translate(-445px, 0);
+    -webkit-transform: translate(-500px, 0);
+    transform: translate(-500px, 0);
     /* Optionally, we animate the drawer. */
     transition: transform 0.3s ease;
 }
@@ -95,7 +97,6 @@ nav {
     float:left;
 }
 .bar-item {
-    color: #24245b;
     text-transform: uppercase;
     letter-spacing: 0.4em;
     font-size: 1.8em;
@@ -105,11 +106,13 @@ nav {
     width:100%;
 }
 .bar-item:hover {
-    color: #24245b;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
 }
+
+
+
 /******Main content **********************/
 
 .invisible {
@@ -118,36 +121,87 @@ nav {
 .hiddens {
     opacity: 0;
 }
-
-#main {
+.deviding-line {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    /* background-color: #2f420d; */
+    background-image: linear-gradient(to right,  #2f420d 0%, white 70%);
+}
+.deviding-line-reverse {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background-image: linear-gradient(to left,  #2f420d 0%, white 70%);
+}
+
+main {
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+
+
+
+/*******About me ****************/
+
+.section-title{
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
 }
 #about-me {
-    max-width: 100%;
-    max-height: 100%;
-    margin-top: 20.6074vh;
-    margin-bottom: 24.9458vh;
+    background-image: linear-gradient(to left, white 0%, rgb(240, 240, 240) 70%);
+    height: 85vh;
+    padding: 3%;
+    margin: 0;
 }
-.top-text {
-    width: 90%;
-    text-align: center;
-    margin-left: auto;
-    margin-right:auto;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    font-size: 5em;
+.who-am-i, .my-skills {
+    box-shadow: 2px 2px 26px 1px rgb(202, 202, 202);
+    display: block;
+    font-size: 1.4em;
+    width: 80%;
+    margin: 2% auto 0 auto;
+    background-color: white;
+    padding: 20px;
 }
+.img-portrait {
+    border-radius: 50%;
+    width: 500px;
+    display: inline-block;
+}
+.info {
+    display: inline-block;
+}
+.icon-info {
+    color: #DAF0B2;
+    margin-right: 25px;
+}
+.info-title {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.deviding-line-middle {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 133px;
+    background-color: #DAF0B2;
+}
+
+/****************Projects******************/
+
 #projects {
     width: 100%;
-    margin-left:-800px;
     max-width:100%;
-    background-image: linear-gradient(to right, rgb(240, 240, 240) 0%, white 30%, rgb(240, 240, 240) 70%);
+    background-color: white;
     padding-bottom: 70px;
 }
 #projects-title {
     width: 100%;
-    padding: 70px 0 40px 0;
+    padding: 70px 0;
 }
 #main-top {
     background-color: snow;
@@ -162,17 +216,12 @@ nav {
 }
 #main-bottom {
     background-color: snow;
-    /* background-image: url(images/main-bottom.png); */
     width: 100%;
     margin: 0;
     padding: 0;
     height: 79px;
 }
-#projects-title p{
-    color: #24245b;
-}
 .middle-header {
-    color: #fff;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.65em;
@@ -196,22 +245,22 @@ nav {
     margin: 0 10px;
 }
 .img-project1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/pxl.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) ), url(images/pxl.jpg);
 }
 .img-project2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/mandarine-villa.png);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) ), url(images/mandarine-villa.png);
 }
 .img-project3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/memory-game.png);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) ), url(images/memory-game.png);
 }
 .img-project4 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/author_quiz.png);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) ), url(images/author_quiz.png);
 }
 .img-project5 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/arcade-game.png);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) ), url(images/arcade-game.png);
 }
 .img-project6 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/my-reads.png);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) ), url(images/my-reads.png);
 }
 
 .img-project {
@@ -256,7 +305,7 @@ nav {
     background-color: rgba(0,0,0,0);
     color: #DAF0B2;
     border: 1px solid #DAF0B2;
-    box-shadow: 0 0 7px 7px #DAF0B2;
+    box-shadow: 0 0 7px 2px #DAF0B2;
     border-radius: 2px;
     font-size: 1.5em;
 }
@@ -269,12 +318,14 @@ nav {
 
 
 #contact-me {
-    margin: 250px auto 150px auto;
-    width: 60%;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #DAF0B2;
+    padding: 3% 0;
 }
 form {
     margin: 25px 0 0 0;
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -282,7 +333,7 @@ form {
 
 .contact-header {
     background-color: #fff;
-    color: #24245b;
+    color: #2f420d;
     text-transform: uppercase;
     letter-spacing: 0.65em;
     display: inline-block;
@@ -291,16 +342,18 @@ form {
     text-align: center;
 }
 .fa-envelope {
-    color: #7285a5;
+    color: #2f420d;
     margin-right: 15px;
 }
 .btn {
-    background-color: #DAF0B2;
-    color: #24245b;
+    background-color: white;
+    color: #2f420d;
     padding: 16px 30px;
+    transition: 0.2 ease;
 }
 .btn:hover {
-    background-color: rgb(223, 253, 168);
+    color: white;
+    background-color: #2f420d;
 }
 
 
@@ -323,14 +376,13 @@ footer {
     margin-left: auto;
 }
 .footer-name {
-    color: #24245b;
     text-transform: uppercase;
     letter-spacing: 0.65em;
     margin-bottom: 25px;
 }
 .icons i {
     display: inline-block;
-    color: #24245b;
+    color: #2f420d;
     margin-right: 15px;
 }
 .icons i:hover {
@@ -339,7 +391,6 @@ footer {
 }
 #bottom {
     margin: 0;
-    color: #24245b;
     padding-left: 5%;
 }
 

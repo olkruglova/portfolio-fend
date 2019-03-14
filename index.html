@@ -26,12 +26,15 @@
                     <h6 class="sub-name">Portfolio</h6>
                 </div>
                 <nav>
-                    <ul>
+                    <ul class="menu">
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#projects">O mnie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact-me">Contact Me</a>
+                            <a class="nav-link" href="#projects">Projekty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-me">Kontakt</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#social">Social</a>
@@ -42,22 +45,42 @@
                     <a class="burger-menu"><i class="fas fa-bars fa-3x"></i></a>
                 </div>
                 <div id="menu-bar">
-                    <a class="bar-item" href="#projects">Projects</a><br>
-                    <a class="bar-item" href="#contact-me">Contact Me</a><br>
+                    <a class="bar-item" href="#projects">O mnie</a><br>
+                    <a class="bar-item" href="#projects">Projekty/a><br>
+                    <a class="bar-item" href="#contact-me">Kontakt</a><br>
                     <a class="bar-item" href="#social">Social</a><br>
                 </div>
             </div>
         </header>
-        
-        <article id="main">
+        <div class="deviding-line"></div>
+
+        <main>
             <section id="about-me">
-                <p class="top-text">Since I started to learn<br> HTML, CSS, JS, <br>my life has changed radically...</p>
+                <div class="row">
+                    <h2 class="section-title">O mnie</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 portrait">
+                        <img class="img img-responsive img-portrait" src="images/photo_portfolio_transp.png" alt="Olha Kruhlova">
+                    </div>
+                    <div class="col-md-8 info">
+                        <div class="who-am-i">
+                            <p class="info-title"><i class="fas fa-user-secret fa-3x icon-info"></i>Kim jestem</p>
+                            <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="my-skills">
+                            <p class="info-title"><i class="fas fa-thumbs-up fa-3x icon-info"></i>Moje umiejętności</p>
+                            <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
-            
+            <div class="deviding-line-reverse"></div>
+            <div class="deviding-line-middle"></div>
+            <div class="deviding-line"></div>
             <section id="projects" class="hiddens">
-                <!-- <div id="main-top" class="img img-responsive"></div> -->
                 <div id="projects-title">
-                    <p class="middle-header">Projects</p>
+                    <p class="middle-header">Projekty</p>
                 </div>
 
                 <div id="projects-item">
@@ -129,41 +152,39 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </section>
-        </article>
-
-        <article id="contact-me" class="hiddens">
-            <form action="mailto:olkruhlova@gmail.com" method="post" enctype="text/plain" class="form-horizontal">
-                <h5 class="contact-header"><i class="fa fa-envelope"></i>Contact Me</h5>
-                <div class="card border-primary rounded-0">
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+            <div class="deviding-line-reverse"></div>
+            <section id="contact-me" class="hiddens">
+                <form action="mailto:olkruhlova@gmail.com" method="post" enctype="text/plain" class="form-horizontal">
+                    <h5 class="contact-header"><i class="fa fa-envelope"></i>Contact Me</h5>
+                    <div class="card border-primary rounded-0">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                            <textarea class="form-control" rows="3" name="message" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                            <button type="submit" class="btn btn-block">Send</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                        <textarea class="form-control" rows="3" name="message" placeholder="Your Message"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                        <button type="submit" class="btn btn-block">Send</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </article>
-
-        <footer class="hiddens">
+                </form>
+            </section>
+        </main>
+        <div class="deviding-line"></div>
+        <footer>
             <div class="row row-footer text-center">
                 <h5 class="footer-name">Portfolio O.K.</h5>
                 <div id="social" class="icons">
