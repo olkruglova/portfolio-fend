@@ -155,7 +155,7 @@ main {
 }
 #about-me {
     background-image: linear-gradient(to left, white 0%, rgb(240, 240, 240) 70%);
-    height: 85vh;
+    height: 35%;
     padding: 3%;
     margin: 0;
 }
@@ -163,10 +163,15 @@ main {
     box-shadow: 2px 2px 26px 1px rgb(202, 202, 202);
     display: block;
     font-size: 1.4em;
-    width: 80%;
+    padding: 20px;
     margin: 2% auto 0 auto;
     background-color: white;
-    padding: 20px;
+}
+.who-am-i {
+    width: 100%;
+}
+ul {
+    list-style-type: none;
 }
 .img-portrait {
     border-radius: 50%;
@@ -175,6 +180,9 @@ main {
 }
 .info {
     display: inline-block;
+}
+.skills-info {
+    margin-top: 15px;
 }
 .icon-info {
     color: #DAF0B2;
@@ -210,10 +218,6 @@ main {
     height: 127px;
     margin: 0;
     padding: 0;
-}
-.row {
-    margin:0;
-    padding:0;
 }
 #main-bottom {
     background-color: snow;
