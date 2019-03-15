@@ -331,9 +331,8 @@ ul {
     background-color: rgba(0,0,0,0);
     color: #2f420d;
     border: 1px solid #2f420d;
-    box-shadow: 0 0 17px 1px #4b641e;
+    box-shadow: 0 0 30px 1px #4b641e;
     border-radius: 2px;
-    font-size: 1.5em;
     bottom: -300px;
     transition: 0.7s ease;
 }
@@ -341,13 +340,13 @@ ul {
     background-color: rgba(0,0,0,0);
     color: #2f420d;
     border: 1px solid #2f420d;
-    box-shadow: 0 0 8px 1px #2f420d;
+    box-shadow: 0 0 5px 1px #2f420d;
     border-radius: 2px;
-    font-size: 1.5em;
 }
 .btn-more a {
     color: #2f420d;
     text-decoration: none;
+    font-size: 1.2em;
 }
 /******Contact Me*******************/
 
