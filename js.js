@@ -4,7 +4,6 @@ $(document).ready(function() {
 
 /* Every time the window is scrolled ... */
     $(window).scroll( function(){
-        $('header').css('opacity', 1 - $(window).scrollTop() / 170);
 
         $('.hiddens').each( function(i){
             
@@ -29,88 +28,38 @@ $(document).ready(function() {
         }); 
     });
 
+    let img = document.getElementsByClassName('img-project');
+
+    for(let x=0; x<img.length; x++) {
+        img[x].addEventListener('mouseover', function() {
+            let btn = $(this).find('.btn-more');
+                btn.css('bottom', '0');
+        });
+        img[x].addEventListener('mouseout', function() {
+            let btn = $(this).find('.btn-more');
+                btn.css('bottom', '-300px');
+        })
+    }
+
+
+
+    /*
+    * Open burger-menu
+    */
+    var menu = document.querySelector('#hamburger-menu');
+    var main = document.querySelector('.container');
+    var drawer = document.querySelector('#menu-bar');
+    
+    menu.addEventListener('click', function(e) {
+    drawer.classList.toggle('open');
+    e.stopPropagation();
+    });
+    main.addEventListener('click', function() {
+    drawer.classList.remove('open');
+    });
+
 });
 
-$('.img-project1')
-    .mouseover(
-        function() {
-            $('.caption1').css('bottom', '10%');
-        }
-    )
-    .mouseout(
-        function() {
-            $('.caption1').css('bottom', '-500px');
-        }
-    )
-$('.img-project2')
-.mouseover(
-    function() {
-        $('.caption2').css('bottom', '10%');
-    }
-)
-.mouseout(
-    function() {
-        $('.caption2').css('bottom', '-500px');
-    }
-)
-$('.img-project3')
-.mouseover(
-    function() {
-        $('.caption3').css('bottom', '10%');
-    }
-)
-.mouseout(
-    function() {
-        $('.caption3').css('bottom', '-500px');
-    }
-)
-$('.img-project4')
-.mouseover(
-    function() {
-        $('.caption4').css('bottom', '10%');
-    }
-)
-.mouseout(
-    function() {
-        $('.caption4').css('bottom', '-500px');
-    }
-)
-$('.img-project5')
-.mouseover(
-    function() {
-        $('.caption5').css('bottom', '10%');
-    }
-)
-.mouseout(
-    function() {
-        $('.caption5').css('bottom', '-500px');
-    }
-)
-$('.img-project6')
-.mouseover(
-    function() {
-        $('.caption6').css('bottom', '10%');
-    }
-)
-.mouseout(
-    function() {
-        $('.caption6').css('bottom', '-500px');
-    }
-)
 
 
 
-/*
-  * Open the drawer when the menu ison is clicked.
-  */
- var menu = document.querySelector('#hamburger-menu');
- var main = document.querySelector('.container');
- var drawer = document.querySelector('#menu-bar');
- 
- menu.addEventListener('click', function(e) {
-   drawer.classList.toggle('open');
-   e.stopPropagation();
- });
- main.addEventListener('click', function() {
-   drawer.classList.remove('open');
- });
