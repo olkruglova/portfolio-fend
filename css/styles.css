@@ -274,22 +274,22 @@ ul {
     margin: 0 10px;
 }
 .img-project1 {
-    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8) ), url(images/pxl.jpg);
+    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8) ), url(../images/pxl.jpg);
 }
 .img-project2 {
-    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8)), url(images/mandarine-villa.png);
+    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8)), url(../images/mandarine-villa.png);
 }
 .img-project3 {
-    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8) ), url(images/memory-game.png);
+    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8) ), url(../images/movie-searcher.png);
 }
 .img-project4 {
-    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8) ), url(images/author_quiz.png);
+    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8) ), url(../images/memory-game.png);
 }
 .img-project5 {
-    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8) ), url(images/arcade-game.png);
+    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8) ), url(../images/author_quiz.png);
 }
 .img-project6 {
-    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8) ), url(images/my-reads.png);
+    background-image: linear-gradient(to top, rgba(218, 240, 178, 0.8), rgba(255, 255, 255, 0.8) ), url(../images/my-reads.png);
 }
 
 .img-project {
