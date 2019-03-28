@@ -498,7 +498,7 @@ footer {
         margin-left: 12px;
     }
     header {
-        padding: 4%;
+        padding: 2%;
     }
     .info-text {
         column-count: 1;
@@ -506,9 +506,6 @@ footer {
     }
     .my-skills {
         font-size: 0.9em;
-    }
-    #about-me {
-        height: 28%;
     }
     #projects-title {
         padding: 40px 0;
