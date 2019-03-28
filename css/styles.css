@@ -142,7 +142,7 @@ nav {
 }
 
 main {
-    width: 100%;
+    /* width: 100%; */
     padding: 0;
     margin:0;
 }
@@ -490,6 +490,43 @@ footer {
 @media screen and (max-width: 791px) {
     .img-portrait {
         width: 165px;
+    }
+    .row-header{
+        margin-right: 0;
+    }
+    #hamburger-menu {
+        margin-left: 12px;
+    }
+    header {
+        padding: 4%;
+    }
+    .info-text {
+        column-count: 1;
+        font-size: 14px;
+    }
+    .my-skills {
+        font-size: 0.9em;
+    }
+    #about-me {
+        height: 28%;
+    }
+    #projects-title {
+        padding: 40px 0;
+    }
+    .img-project {
+        height: 260px;
+    }
+    .img-project p {
+        font-size: 1.4em;
+    }
+    .img-project button {
+        width: 60%;
+    }
+    .btn-more a {
+        font-size: 0.9em;
+    }
+    form {
+        width: 80%;
     }
 }
 
