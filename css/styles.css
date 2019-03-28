@@ -525,5 +525,8 @@ footer {
     form {
         width: 80%;
     }
+    .bar-item {
+        padding: 0 40px;
+    }
 }
 
