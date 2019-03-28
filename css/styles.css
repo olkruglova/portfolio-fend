@@ -486,3 +486,10 @@ footer {
         height: 33%;
     }
 }
+
+@media screen and (max-width: 791px) {
+    .img-portrait {
+        width: 165px;
+    }
+}
+
